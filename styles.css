@@ -1,0 +1,93 @@
+html, body, #app {
+  height: 100%;
+  margin: 0;
+}
+
+#app {
+  display: flex;
+  
+  /*
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  align-content: flex-start;
+  */
+
+  /*
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  */
+}
+/*
+
+- Para trabalhar com o flexbox a primeira coisa que devemos 
+  fazer é colocar a propriedade 'display: flex' no elemento pai
+- Por padrão o flexbox alinha os elementos horizontalmente
+- Ou seja, a propriedade flex direction é por padrão 'row' (linha)
+- Opções de propriedade 
+
+- Define a direção dos elementos filhos
+flex-direction: column/column-reverve/row/row-reverse
+
+- Quando 'flex-direction' for 'row' o 'align-items' alinha os items verticalmente
+  e o 'justify-content' alinha horizontalmente
+- Quando 'flex-direction' for 'column' o 'align-items' alinha os items horizontalmente
+  e o 'justify-content' alinha verticalmente
+align-items: flex-start/center/flex-end
+justify-content: flex-start/center/flex-end/space-between/space-around
+
+
+- Controlando se um elemento pode ser redimensionado
+
+- Diz que um elemento aceita ser aumentado para caber no elemento pai
+flex-grow: 1; 
+- Diz se um elemento tem a capacidade de se 'espremer' para caber no container
+flex-shrink: 1; // Ou '0'
+- A soma do 'flex-grow' e 'flex-shrink'.
+flex: 1 0; //Diz que o elemento aceita aumentar se necessário, porém não se esprema
+
+- Quebra de linha dentro do flexbox
+
+flex-wrap: wrap/wrap-reverse;
+- Com o 'flex-wrap' temos o alinhamento da seguinte forma:
+- Alinhamento vertical
+align-items: flex-start/center/flex-end
+- Alinhamento horizontal
+justify-content: flex-start/center/flex-end/space-between/space-around
+- Alinha os elementos quando tem mais de uma linha quebrada
+align-content: flex-start/center/flex-end/space-between/space-around
+
+- Ordenando os elementos
+
+- Define a propriedade 'order' nos elementos filho
+order: 1
+
+
+*/
+.box {
+  width: 200px;
+  height: 60px;
+  background: #f00;
+  margin: 5px;
+  /*
+  flex: 1; 
+  */
+
+}
+
+.red {
+  background: #f00;
+  order: 1;
+}
+
+.green {
+  background: #0f0;
+  order: 2;
+}
+
+.blue {
+  background: #00f;
+  order: 3;
+}
+
